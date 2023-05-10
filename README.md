@@ -1,7 +1,6 @@
 # Azure-Soc
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://docs.google.com/drawings/d/e/2PACX-1vToP9wnLYfz7XCigneujX8myV_yT5OJca3tBFt-zuXGTjX66w40R23lA7O5Y0vBHNgtHGT1jkuxodIt/pub?w=1199&h=688)
-
+![Cloud Honeynet / SOC](https://i.imgur.com/TVs8Epc.jpg)
 ## Introduction
 
 In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, apply some security controls to harden the environment, measure metrics for another 24 hours, then show the results below. The metrics we will show are:
@@ -40,16 +39,16 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time 2023-05-08T17:01:48
+Stop Time 2023-05-09T17:01:48
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 34495
+| Syslog                   | 5360
+| SecurityAlert            | 2
+| SecurityIncident         | 296
+| AzureNetworkAnalytics_CL | 699
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -58,8 +57,9 @@ Stop Time 2023-03-16 17:04:29
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+Start Time 2023-05-09T21:06:01
+Stop Time	2023-05-10T21:06:01
+
 
 | Metric                   | Count
 | ------------------------ | -----
