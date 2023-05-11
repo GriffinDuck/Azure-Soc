@@ -16,7 +16,7 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 
 ![Architecture](https://i.imgur.com/TVs8Epc.jpg)
 
-## Tools, Technology and Regulations used for the Project
+## Tools, Technology and Regulations Utilized
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
@@ -83,6 +83,10 @@ Stop Time	2023-05-10 6:01 PM EST
 
 ## Conclusion
 
-In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastially reduced after the security controls were applied, demonstrating their effectiveness.
+In this project, I built a mini honeynet in Microsoft Azure and integrated log sources from various resources into a Log Analytics workspace. Using Microsoft Sentinel, I set up alerts and created incidents based on the ingested logs. I measured some security metrics in the insecure environment for 24 hours, applied security controls to harden the environment, and measured the metrics again for another 24 hours. One of the most significant achievements of this project was the drastic reduction in the number of security events and incidents after implementing the security controls. This clearly demonstrates the effectiveness of the security measures in reducing the system's vulnerability to cyber attacks.
 
-It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
+It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 48-hour period following the implementation of the security controls. Overall, this project aimed to create a more secure state for the endpoints by implementing access control rules and following NIST SP 800-53 guidelines. The changes greatly improved the security posture of the system, making it less vulnerable to cyber attacks.
+
+## Credit
+
+This project was based on a coursed developed by Josh Madakor and can be found here:[leveld](https://www.leveldcareers.com/cyber-security-course)
