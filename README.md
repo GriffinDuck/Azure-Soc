@@ -16,7 +16,7 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 
 ![Architecture](https://i.imgur.com/TVs8Epc.jpg)
 
-The architecture of the mini honeynet in Azure consists of the following components:
+## Tools, Technology and Regulations used for the Project
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
@@ -25,6 +25,13 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Key Vault
 - Azure Storage Account
 - Microsoft Sentinel
+- Microsoft Defender for Cloud
+- Windows RDP
+- Syslog
+- Windows Event Viewer
+- Powershell
+- KQL
+- NIST SP 800-53
 
 ## Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/v03nG2p.jpg)
@@ -44,8 +51,8 @@ This architecture represents a more secure state of the system after implementin
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-05-08T17:01:48
-Stop Time 2023-05-09T17:01:48
+Start Time 2023-05-08 1:48 PM EST
+Stop Time 2023-05-09 1:48 PM EST
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -62,8 +69,8 @@ Stop Time 2023-05-09T17:01:48
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-05-09T21:06:01
-Stop Time	2023-05-10T21:06:01
+Start Time 2023-05-09 6:01 PM EST
+Stop Time	2023-05-10 6:01 PM EST
 
 
 | Metric                   | Count
