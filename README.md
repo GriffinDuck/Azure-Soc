@@ -16,12 +16,6 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 
 ![Architecture](https://i.imgur.com/TVs8Epc.jpg)
 
-## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/v03nG2p.jpg)
-
-## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/GGQ5zhO.jpg)
-
 The architecture of the mini honeynet in Azure consists of the following components:
 
 - Virtual Network (VNet)
@@ -32,7 +26,13 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Storage Account
 - Microsoft Sentinel
 
+## Architecture Before Hardening / Security Controls
+![Architecture Diagram](https://i.imgur.com/v03nG2p.jpg)
+
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+
+## Architecture After Hardening / Security Controls
+![Architecture Diagram](https://i.imgur.com/GGQ5zhO.jpg)
 
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
