@@ -29,7 +29,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 ## Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/v03nG2p.jpg)
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+This architecture represents the insecure state of the system prior to implementing security controls. It was completely exposed to the internet, with both Network Security Groups and built-in firewalls set to allow all traffic. Access control rules were created to allow unrestricted communication between network endpoints. In addition, all other resources were deployed with public endpoints visible to the internet, without using any Private Endpoints
 
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/GGQ5zhO.jpg)
