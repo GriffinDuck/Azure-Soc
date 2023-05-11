@@ -34,7 +34,7 @@ This architecture represents the insecure state of the system prior to implement
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/GGQ5zhO.jpg)
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+This architecture represents a more secure state of the system after implementing security controls. Access control rules were put in place to block all traffic except for that from my home device. To comply with the Boundary Protection section of NIST SP 800-53, I followed the compliance section of Microsoft Defender and created a Virtual Network and Subnet. This change made all resources into private endpoints.
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/pjUb6BH.png)<br>
