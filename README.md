@@ -89,4 +89,4 @@ It is worth noting that if the resources within the network were heavily utilize
 
 ## Credit
 
-This project was based on a coursed developed by Josh Madakor and can be found here: [leveld](https://www.leveldcareers.com/cyber-security-course)
+This project was based on a course developed by Josh Madakor and can be found here: [leveld](https://www.leveldcareers.com/cyber-security-course)
